@@ -22,6 +22,14 @@ HttpResponse response;
        response = peopleApiClient.getAllPeople();
        String allPeople = EntityUtils.toString(response.getEntity());
 
+       response = peopleApiClient.deleteOnePerson();
+       String deletePerson = EntityUtils.toString(response.getEntity());
+
+       response = peopleApiClient.postNewPerson();
+       String postPerson = EntityUtils.toString(response.getEntity());
+
+       response = peopleApiClient.putNewPerson();
+       String updateLocation = EntityUtils.toString(response.getEntity());
 
     }
 
