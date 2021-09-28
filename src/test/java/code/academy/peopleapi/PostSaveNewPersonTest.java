@@ -51,7 +51,6 @@ public class PostSaveNewPersonTest {
         Assert.assertEquals(postNewPersonResponse.getPersonData().getAge(), postNewPersonRequest.getAge());
         Assert.assertEquals(postNewPersonResponse.getPersonData().getIsEmployed(), postNewPersonRequest.getIsEmployed());
         Assert.assertEquals(postNewPersonResponse.getPersonData().getLocation(), postNewPersonRequest.getLocation());
-        Assert.assertEquals(postNewPersonResponse.getPersonData().getLocation(), postNewPersonRequest.getLocation());
 
         personOneId = postNewPersonResponse.getPersonData().getId();
     }
@@ -179,7 +178,7 @@ public class PostSaveNewPersonTest {
     public void afterClass() throws Exception{
     peopleApiClient.httpDelete("https://people-api1.herokuapp.com/api/person/" + personOneId);
     peopleApiClient.httpDelete("https://people-api1.herokuapp.com/api/person/" + personTwoId) ;
-    peopleApiClient.httpDelete("https://people-api1.herokuapp.com/api/person/" + "personThreeID");
+    peopleApiClient.httpDelete("https://people-api1.herokuapp.com/api/person/" + personThreeID);
 }
 
 }
