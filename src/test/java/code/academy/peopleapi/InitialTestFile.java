@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import static code.academy.utils.ConversionUtils.*;
 import static org.apache.http.HttpStatus.*;
 
+
 @Test
 public class InitialTestFile {
     PeopleApiClient peopleApiClient = new PeopleApiClient();
@@ -134,3 +135,4 @@ public class InitialTestFile {
         Assert.assertEquals(putNewLocationResponse.getPerson().getLocation(),"Skopje");
     }
 }
+

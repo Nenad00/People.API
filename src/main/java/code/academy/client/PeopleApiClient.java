@@ -19,6 +19,7 @@ import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.util.EntityUtils;
 
 
+
 public class PeopleApiClient {
     public PeopleApiClient() throws Exception {
     }
@@ -104,5 +105,4 @@ public class PeopleApiClient {
         return response;
     }
 
-
-}
+    }
